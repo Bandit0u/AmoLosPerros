@@ -19,7 +19,7 @@ from Prueba import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('Prueba/',include(('AmoLosPerros.ILoveDogs.AmoLosPerros.Prueba.urls', 'Prueba'))),
     path('', views.home),
     path('login.html/', views.login_page),
-    path('Prueba/',include(('AmoLosPerros.ILoveDogs.AmoLosPerros.Prueba.urls', 'Prueba'))),
-]
+    ]
