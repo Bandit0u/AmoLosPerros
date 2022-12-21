@@ -1,2 +1,6 @@
 from django.urls import path
-urlpatterns = []
+from .views import Home
+
+urlpatterns = [
+  path ('', Home, name = 'index')
+    ]
